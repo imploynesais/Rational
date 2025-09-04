@@ -13,6 +13,8 @@ class Rational {
      */
     Rational() {
         // to be completed
+        numerator = 0;
+        denominator = 1;
     }
 
     /***
@@ -23,6 +25,12 @@ class Rational {
      */
     Rational(long numerator, long denominator) throws Illegal { 
         // to be completed
+        if (denominator == 0) {
+            throw new Illegal("Denominator cannot be zero");
+        }
+        this.numerator = numerator;
+        this.denominator = denominator;
+        simplestForm();
     }
 
     /***
@@ -33,15 +41,20 @@ class Rational {
         long computeGCD; 
         computeGCD = GCD(Math.abs(numerator), denominator); 
         numerator /= computeGCD; 
-        denominator /= computeGCD; 
+        denominator /= computeGCD;
+        // Ensure denominator is positive
+        if (denominator < 0) {
+            numerator = -numerator;
+            denominator = -denominator;
+        }
     }
 
     /***
      * find the greatest common denominator
      */
-    private long GCD(long a, long b) { 
-        if (a%b ==0) return b; 
-        else return GCD(b,a%b); 
+    private long GCD(long a, long b) {
+        if (b == 0) return a;
+        return GCD(b, a % b);
     }
 
     /***
@@ -60,6 +73,10 @@ class Rational {
      */
     public void subtract(Rational x) {
         // to be completed
+        numerator = (numerator * x.denominator) - (x.numerator * denominator);
+        denominator = (denominator * x.denominator);
+        simplestForm();
+
     }
 
     /***
@@ -68,6 +85,9 @@ class Rational {
      */
     public void multiply(Rational x) { 
         // to be completed
+        numerator = numerator * x.numerator;
+        denominator = denominator * x.denominator;
+        simplestForm();
     }
 
     /***
@@ -76,6 +96,13 @@ class Rational {
      */
     public void divide(Rational x) {
         // to be completed
+        if (x.numerator == 0) {
+            throw new ArithmeticException("Cannot divide by zero");
+        }
+        numerator = numerator * x.denominator;
+        denominator = denominator * x.numerator;
+        simplestForm();
+
     }
 
     /***
@@ -85,7 +112,11 @@ class Rational {
      */
     public boolean equals(Object x) {
         // to be completed
-        return true; // TODO: This needs to be modified.
+        // return true; // TODO: This needs to be modified.
+        if (this == x) return true;
+        if (!(x instanceof Rational)) return false;
+        Rational other = (Rational) x;
+        return this.numerator * other.denominator == other.numerator * this.denominator;
     }
 
     /***
@@ -95,8 +126,13 @@ class Rational {
      * rational number is larger than the given number
      */
     public long compareTo(Object x) {
-        // to be completed
-        return -1; // TODO: this needs to be modified.
+        if (!(x instanceof Rational)) {
+            throw new ClassCastException("Object is not a Rational");
+        }
+        Rational other = (Rational) x;
+        long lhs = this.numerator * other.denominator;
+        long rhs = other.numerator * this.denominator;
+        return Long.compare(lhs, rhs);
     }
 
     /***
@@ -105,7 +141,7 @@ class Rational {
      */
     public String toString() { 
         // to be completed
-        return ""; // TODO: This needs to be modified.
+        return numerator + "/" + denominator;
     }
 
     public static void main(String[] args) {

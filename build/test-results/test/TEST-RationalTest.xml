@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RationalTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-09-04T09:43:15" hostname="MacBook-Air-khxng-Ploy.local" time="0.006">
+  <properties/>
+  <testcase name="testCompareToEqual" classname="RationalTest" time="0.003"/>
+  <testcase name="testEqualsFalse" classname="RationalTest" time="0.0"/>
+  <testcase name="testAdd" classname="RationalTest" time="0.0"/>
+  <testcase name="testSubtract" classname="RationalTest" time="0.001"/>
+  <testcase name="testEqualsTrue" classname="RationalTest" time="0.0"/>
+  <testcase name="testCompareToLessThan" classname="RationalTest" time="0.0"/>
+  <testcase name="testCompareToGreaterThan" classname="RationalTest" time="0.001"/>
+  <testcase name="testDivide" classname="RationalTest" time="0.0"/>
+  <testcase name="testMultiply" classname="RationalTest" time="0.0"/>
+  <system-out><![CDATA[Initializing the two Rational numbers.
+Clear up the two Rational numbers.
+Initializing the two Rational numbers.
+Clear up the two Rational numbers.
+Initializing the two Rational numbers.
+Clear up the two Rational numbers.
+Initializing the two Rational numbers.
+Clear up the two Rational numbers.
+Initializing the two Rational numbers.
+Clear up the two Rational numbers.
+Initializing the two Rational numbers.
+Clear up the two Rational numbers.
+Initializing the two Rational numbers.
+Clear up the two Rational numbers.
+Initializing the two Rational numbers.
+Clear up the two Rational numbers.
+Initializing the two Rational numbers.
+Clear up the two Rational numbers.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

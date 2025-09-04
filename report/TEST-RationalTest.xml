@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="MacBook-Air-khxng-Ploy.local" name="RationalTest" skipped="0" tests="9" time="0.197" timestamp="2025-09-04T09:39:21">
+  <properties>
+    <property name="ant.project.invoked-targets" value="test1" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/lib" />
+    <property name="java.vm.version" value="25.402-b08" />
+    <property name="ant.library.dir" value="/Users/ploymanasawan/Library/Application Support/JetBrains/IntelliJIdea2024.3/plugins/ant/dist/lib" />
+    <property name="gopherProxySet" value="false" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.14 compiled on August 16 2023" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="java.vm.vendor" value="Amazon.com Inc." />
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="user.country" value="TH" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="user.dir" value="/Users/ploymanasawan/Rational" />
+    <property name="java.runtime.version" value="1.8.0_402-b08" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="basedir" value="/Users/ploymanasawan/Rational" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="os.arch" value="aarch64" />
+    <property name="java.io.tmpdir" value="/var/folders/dz/3dvd9l7541d5zqlsbt9_qjgh0000gn/T/" />
+    <property name="ant.core.lib" value="/Users/ploymanasawan/Library/Application Support/JetBrains/IntelliJIdea2024.3/plugins/ant/dist/ant.jar" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="ant.home" value="/Users/ploymanasawan/Library/Application Support/JetBrains/IntelliJIdea2024.3/plugins/ant/dist" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="java.library.path" value="/Users/ploymanasawan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="52.0" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.version" value="14.0" />
+    <property name="ant.file" value="/Users/ploymanasawan/Rational/build.xml" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="user.home" value="/Users/ploymanasawan" />
+    <property name="user.timezone" value="" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="java.class.path" value="/Users/ploymanasawan/Library/Application Support/JetBrains/IntelliJIdea2024.3/plugins/ant/dist/ant.jar:/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/lib/tools.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar" />
+    <property name="user.name" value="ploymanasawan" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="sun.java.command" value="com.intellij.rt.ant.execution.AntMain2 -logger com.intellij.rt.ant.execution.IdeaAntLogger2 -inputhandler com.intellij.rt.ant.execution.IdeaInputHandler -buildfile /Users/ploymanasawan/Rational/build.xml test1" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="user.language" value="en" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="java.version" value="1.8.0_402" />
+    <property name="java.ext.dirs" value="/Users/ploymanasawan/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/jre/classes" />
+    <property name="java.vendor" value="Amazon.com Inc." />
+    <property name="java.specification.maintenance.version" value="5" />
+    <property name="file.separator" value="/" />
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-8/issues/" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="ant.file.type" value="file" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="sun.cpu.isalist" value="" />
+  </properties>
+  <testcase classname="RationalTest" name="testCompareToEqual" time="0.004" />
+  <testcase classname="RationalTest" name="testEqualsFalse" time="0.0" />
+  <testcase classname="RationalTest" name="testAdd" time="0.001" />
+  <testcase classname="RationalTest" name="testSubtract" time="0.0" />
+  <testcase classname="RationalTest" name="testEqualsTrue" time="0.0" />
+  <testcase classname="RationalTest" name="testCompareToLessThan" time="0.001" />
+  <testcase classname="RationalTest" name="testCompareToGreaterThan" time="0.0" />
+  <testcase classname="RationalTest" name="testDivide" time="0.0" />
+  <testcase classname="RationalTest" name="testMultiply" time="0.001" />
+  <system-out><![CDATA[Initializing the two Rational numbers.
+Clear up the two Rational numbers.
+Initializing the two Rational numbers.
+Clear up the two Rational numbers.
+Initializing the two Rational numbers.
+Clear up the two Rational numbers.
+Initializing the two Rational numbers.
+Clear up the two Rational numbers.
+Initializing the two Rational numbers.
+Clear up the two Rational numbers.
+Initializing the two Rational numbers.
+Clear up the two Rational numbers.
+Initializing the two Rational numbers.
+Clear up the two Rational numbers.
+Initializing the two Rational numbers.
+Clear up the two Rational numbers.
+Initializing the two Rational numbers.
+Clear up the two Rational numbers.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
